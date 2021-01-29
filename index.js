@@ -66,7 +66,7 @@ mongoose.connection
                 .then(() => {
                     const responseJson = {
                         title: `Last ${numberOfDocs} heart rates`,
-                        date: valueArray,
+                        data: valueArray,
                     };
 
                     return res.send(JSON.stringify(responseJson));
